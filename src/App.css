@@ -18,7 +18,7 @@ header {
 }
 
 nav {
-  display: none; /* Hidden by default on smaller screens */
+  display: none; 
 }
 
 nav ul {

@@ -2,12 +2,15 @@ import React from "react";
 
 export const ProjectCart = (props) => {
   return (
-    <div>
-      {" "}
-      <img src={props.image} className="card-img-top" alt="..." />
-      <div>
-        <h5 className="card-title mt-3">{props.title}</h5>
-        <p className="card-text">{props.description}</p>
+    <div className="bg-black rounded-lg shadow-lg overflow-hidden  w-full max-w-md mx-auto">
+      {/* Image Section */}
+      <div className="h-48 md:h-64 bg-cover bg-center" style={{ backgroundImage: `url(${props.image})` }}>
+      </div>
+
+      {/* Text Section */}
+      <div className="p-2">
+        <h5 className="text-lg font-bold text-white">{props.title}</h5>
+        <p className="text-white mt-2">{props.description}</p>
       </div>
     </div>
   );

@@ -1,34 +1,32 @@
+
 import React from "react";
-import "./project.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { ProjectCart } from "../../components/projectCart/ProjectCart";
 import ecommerceImage from "../../assets/ecomimage.png";
-import weathrerImage from "../../assets/weatherimage.png";
+import Restautent from "../../assets/Restaurent.png";
+
 export const Project = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    arrows: false,
+  };
+
   return (
     <section id="projects">
-      <div className="project_container">
-        <h2 className="project_heading">Projects</h2>
-
-        <div id="carouselExampleIndicators" className="carousel slide">
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active ">
-              <ProjectCart
+    <div className="slider-container project_container py-4 bg-customGray" >
+        <h2 className="heading py-4">Projects</h2>
+      <Slider {...settings}>
+        <div className="relative px-2">
+        <ProjectCart
                 image={ecommerceImage}
                 title="E-commerce Website"
                 description="User Authentication: Create accounts with name, email, and password. Secure login for account access.Product Catalog: Display    
@@ -36,42 +34,21 @@ export const Project = () => {
                 users to find items easily Shopping Cart: Add products, view, modify, or remove items from the shopping cart.Logout: Secure 
                'Logout' option for users to sign out.Support Channels: Provide customer support through email, chat, and phone for user assistance."
               />
-            </div>
-            <div className="carousel-item">
-              <ProjectCart
-                image={weathrerImage}
-                title="A weather casting web application"
-                description=" Weather apps enable users to get instant alerts regarding weather conditions. Weather apps are the simplest method to know about the updates of the weather.
-"
-              />
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
+       
+        <div className="relative px-2 ">
+        <ProjectCart
+                image={Restautent}
+                title="E-commerce Website"
+                description=" Utilized Next.js, Node.js, MongoDB, Context API, CSS, Bootstrap, and Material-UI to proficiently develop and maintain a robust restaurant application. Implemented essential functionalities such as menu browsing, cart management, and user authentication (login/logout) to enhance user experience.
+  The owner capabilities to add, update, and delete meals, and access a comprehensive list of all meals for management.
+ Created a user-friendly interface enabling customers to contact the restaurant through email for inquiries and feedback.
+  Integrated a payment option for seamless customer transactions" />
+        </div>
+      </Slider>
+    </div>
     </section>
   );
 };
+
+
