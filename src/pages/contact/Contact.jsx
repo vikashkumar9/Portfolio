@@ -11,9 +11,9 @@ export const Contact = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      easing: "ease-in-out", // Easing function
-      once: true, // Animation happens only once
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
 
@@ -52,16 +52,16 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact">
-      <div className="px-4 py-8 bg-customGray" data-aos="fade-up">
+    <section id="contact" className="overflow-x-hidden bg-customGray">
+      <div className="px-4 py-8 " data-aos="fade-up">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-5xl heading font-bold">Contact Us</h2>
+        <h2 className="heading ">Contact Us</h2>
         </div>
       </div>
       <div className="px-6 py-10 bg-customGray">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
           <div className="md:col-span-5 bg-white shadow-md p-6 rounded-md" data-aos="fade-right">
-            <h3 className="text-xl font-semibold text-customGray mb-4">
+            <h3 className="text-xl font-semibold text-gray-700 mb-4">
               We are here to help you
             </h3>
             {isSubmitting && (
@@ -74,8 +74,7 @@ export const Contact = () => {
                   name="name"
                   placeholder="Name"
                   maxLength="35"
-                  aria-label="Enter your full name"
-                  className="w-full bg-white border border-textRed rounded-md px-4 py-2 text-lg text-customGray focus:ring-2 focus:ring-blue-500 focus:border-none"
+                  className="w-full bg-white border border-red-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -84,8 +83,7 @@ export const Contact = () => {
                   name="mobile_number"
                   placeholder="Mobile Number"
                   maxLength="10"
-                  aria-label="Enter your mobile number"
-                  className="w-full bg-white border border-textRed rounded-md px-4 py-2 text-lg text-customGray focus:ring-2 focus:ring-blue-500 focus:border-none"
+                  className="w-full bg-white border border-red-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -93,8 +91,7 @@ export const Contact = () => {
                   type="email"
                   name="email"
                   placeholder="Email Address"
-                  aria-label="Enter your email address"
-                  className="w-full bg-white border border-textRed rounded-md px-4 py-2 text-lg text-customGray focus:ring-2 focus:ring-blue-500 focus:border-none"
+                  className="w-full bg-white border border-red-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -102,64 +99,60 @@ export const Contact = () => {
                   name="message"
                   placeholder="Message"
                   rows="6"
-                  aria-label="Enter your message"
-                  className="w-full bg-white border border-textRed rounded-md px-4 py-2 text-lg text-customGray focus:ring-2 focus:ring-blue-500 focus:border-none"
+                  className="w-full bg-white border border-red-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
               <div>
                 <button
                   type="submit"
-                  className="bg-textRed text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-200"
+                  className="bg-red-500 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-200"
                 >
                   Send
                 </button>
               </div>
             </form>
             {result && (
-              <div className="my-4 text-lg text-customGray">{result}</div>
+              <div className="my-4 text-lg text-gray-700">{result}</div>
             )}
           </div>
           <div className="md:col-span-7 bg-blue-100 shadow-md p-6 rounded-md" data-aos="fade-left">
-            <h3 className="text-xl font-semibold text-customGray mb-4">
+            <h3 className="text-xl font-semibold text-gray-700 mb-4">
               Contact Information
             </h3>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-red-100 rounded-full">
-                  <MdOutlineMailOutline className="w-6 h-6 text-textRed" />
+                  <MdOutlineMailOutline className="w-6 h-6 text-red-500" />
                 </div>
                 <div>
-                  <span className="block text-customGray font-medium">Email</span>
+                  <span className="block text-gray-700 font-medium">Email</span>
                   <a
-                    href="mailto:vikashparjapati59@gmail.com.com"
-                    className="block text-textRed md:text-lg font-bold"
+                    href="mailto:vikashparjapati59@gmail.com"
+                    className="block text-red-500 text-sm font-bold"
                   >
-                    vikashparjapati59@gmail.com.com
+                    vikashparjapati59@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-red-100 rounded-full">
-                  <FaPhoneAlt className="w-6 h-6 text-textRed" />
+                  <FaPhoneAlt className="w-6 h-6 text-red-500" />
                 </div>
                 <div>
-                  <span className="block text-customGray font-medium">
+                  <span className="block text-gray-700 font-medium">
                     Customer Support
                   </span>
-                  <a
-                    href="tel:+919306075344"
-                    className="text-textRed text-lg font-bold"
-                  >
+                  <a href="tel:+919306075344" className="text-red-500 text-lg font-bold">
                     9306075344
                   </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-red-100 rounded-full">
-                  <FaLocationDot className="w-6 h-6 text-textRed" />
+                  <FaLocationDot className="w-6 h-6 text-red-500" />
                 </div>
                 <div>
-                  <span className="block text-customGray font-medium">
+                  <span className="block text-gray-700 font-medium">
                     Address
                   </span>
                   <p className="text-gray-900 text-base">

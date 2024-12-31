@@ -7,8 +7,8 @@ import { Contact } from "./pages/contact/Contact";
 import { Footer } from "./pages/footer/Footer";
 import { Project } from "./pages/projects/Project";
 import { Experience } from "./pages/experience/Experience";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const App = () => {
   return (

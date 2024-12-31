@@ -40,7 +40,7 @@ export const Footer = () => {
                 Address --{" "}
               </span>
               <span>
-                <a href="">Jhajjar (124104), Haryana, India</a>
+                <p>Jhajjar (124104), Haryana, India</p>
               </span>
             </li>
           </ul>
