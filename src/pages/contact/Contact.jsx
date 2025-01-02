@@ -74,7 +74,7 @@ export const Contact = () => {
                   name="name"
                   placeholder="Name"
                   maxLength="35"
-                  className="w-full bg-white border border-red-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full bg-white border border-yellow-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -83,7 +83,7 @@ export const Contact = () => {
                   name="mobile_number"
                   placeholder="Mobile Number"
                   maxLength="10"
-                  className="w-full bg-white border border-red-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full bg-white border border-yellow-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -91,7 +91,7 @@ export const Contact = () => {
                   type="email"
                   name="email"
                   placeholder="Email Address"
-                  className="w-full bg-white border border-red-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full bg-white border border-yellow-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -99,13 +99,13 @@ export const Contact = () => {
                   name="message"
                   placeholder="Message"
                   rows="6"
-                  className="w-full bg-white border border-red-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full bg-white border border-yellow-500 rounded-md px-4 py-2 text-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
               <div>
                 <button
                   type="submit"
-                  className="bg-red-500 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-200"
+                  className="bg-yellow-500 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-200"
                 >
                   Send
                 </button>
@@ -121,35 +121,35 @@ export const Contact = () => {
             </h3>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-red-100 rounded-full">
-                  <MdOutlineMailOutline className="w-6 h-6 text-red-500" />
+                <div className="p-3 bg-yellow-100 rounded-full">
+                  <MdOutlineMailOutline className="w-6 h-6 text-yellow-500" />
                 </div>
                 <div>
                   <span className="block text-gray-700 font-medium">Email</span>
                   <a
                     href="mailto:vikashparjapati59@gmail.com"
-                    className="block text-red-500 text-sm font-bold"
+                    className="block text-yellow-500 text-sm font-bold"
                   >
                     vikashparjapati59@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-red-100 rounded-full">
-                  <FaPhoneAlt className="w-6 h-6 text-red-500" />
+                <div className="p-3 bg-yellow-100 rounded-full">
+                  <FaPhoneAlt className="w-6 h-6 text-yellow-500" />
                 </div>
                 <div>
                   <span className="block text-gray-700 font-medium">
                     Customer Support
                   </span>
-                  <a href="tel:+919306075344" className="text-red-500 text-lg font-bold">
+                  <a href="tel:+919306075344" className="text-yellow-500 text-lg font-bold">
                     9306075344
                   </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-red-100 rounded-full">
-                  <FaLocationDot className="w-6 h-6 text-red-500" />
+                <div className="p-3 bg-yellow-100 rounded-full">
+                  <FaLocationDot className="w-6 h-6 text-yellow-500" />
                 </div>
                 <div>
                   <span className="block text-gray-700 font-medium">

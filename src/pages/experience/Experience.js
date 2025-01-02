@@ -7,7 +7,7 @@ export const Experience = () => {
     {
       role: "Frontend Developer Intern",
       company: "Abtusworld",
-      duration: "Month, Year - Month, Year",
+      duration: "06, 2023 - 11, 2023",
       responsibilities: [
         "Collaborated with a team to design and implement responsive and user-friendly web applications using React.js and Tailwind CSS.",
         "Developed reusable UI components to streamline project development and improve maintainability.",
@@ -19,7 +19,7 @@ export const Experience = () => {
     {
       role: "Frontend Developer (Full-Time)",
       company: "Abtusworld",
-      duration: "Month, Year - Present",
+      duration: "11, 2023 - Present",
       responsibilities: [
         "Led the development of scalable front-end architecture for various projects, leveraging React.js, Redux, and Next.js.",
         "Transitioned projects from traditional CSS frameworks to Tailwind CSS, improving productivity and design consistency.",
@@ -40,6 +40,7 @@ export const Experience = () => {
   }, []);
 
   return (
+    <section id="experience">
     <div className="max-w-7xl mx-auto p-6 lg:p-12 bg-customGray">
       <h2 className="heading py-4">Experience</h2>
       {experiences.map((experience, index) => (
@@ -53,14 +54,14 @@ export const Experience = () => {
           </h2>
           <p className="text-white font-medium text-xl">{experience.company}</p>
           <p className="text-white text-sm mb-4">{experience.duration}</p>
-          <ul className="list-disc list-inside mt-4 text-gray-400 space-y-2">
+          <div className=" text-gray-400 space-y-2">
             {experience.responsibilities.map((responsibility, i) => (
-              <li key={i}>{responsibility}</li>
+              <p key={i}>{responsibility}</p>
             ))}
-          </ul>
+          </div>
         </div>
       ))}
-    </div>
+    </div></section>
   );
 };
 

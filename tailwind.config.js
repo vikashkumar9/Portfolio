@@ -17,6 +17,7 @@ module.exports = {
         fadeIn: "fadeIn 1s ease-out",
         fadeInUp: "fadeInUp 1s ease-out",
       },
+
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0 },
@@ -26,7 +27,11 @@ module.exports = {
           "0%": { opacity: 0, transform: "translateY(20px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
-      }
+      },
+
+      boxShadow: {
+        customShadow: "inset 0 0 10px white",  // Correct placement under boxShadow key
+      },
     },
   },
   plugins: [],

@@ -7,16 +7,16 @@ import "aos/dist/aos.css";
 export const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Duration for animation in milliseconds
-      easing: "ease-in-out", // Easing function
-      once: true, // Only trigger the animation once
+      duration: 1200, 
+      easing: "ease-in-out", 
+      once: true, 
     });
   }, []);
 
   return (
-    <section id="about" className="bg-gray-900 bg-cover bg-center py-8 w-full overflow-hidden">
+    <section id="about" className="bg-customGray bg-cover bg-center py-8 w-full overflow-hidden">
       <div className="flex flex-col md:flex-row items-center justify-around  px-4 md:px-8">
-        {/* Text Section */}
+       
         <div className="max-w-md" data-aos="fade-up">
           <p className="text-gray-300 text-lg mb-4">THIS IS ME</p>
           <h1 className="text-white text-4xl font-bold mb-2">VIKASH</h1>
@@ -36,13 +36,11 @@ export const About = () => {
             </a>
           </button>
         </div>
-
-        {/* Image Section */}
-        <div className="mt-8 md:mt-0" data-aos="fade-left">
+        <div className="mt-8 md:mt-0 " data-aos="fade-left">
           <img
             src={avatar}
             alt="heroimg"
-            className="w-72 h-72 md:w-88 md:h-88 rounded-full border-8 border-gray-600 shadow-lg transition-transform transform hover:scale-105"
+            className="w-72 h-72 md:w-88 md:h-88 rounded-full border-8 border-gray-600 hover:shadow-white "
           />
         </div>
       </div>
