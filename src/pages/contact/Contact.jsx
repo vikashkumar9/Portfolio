@@ -60,8 +60,8 @@ export const Contact = () => {
       </div>
       <div className="px-6 py-10 bg-customGray">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
-          <div className="md:col-span-5 bg-white shadow-md p-6 rounded-md" data-aos="fade-right">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+          <div className="md:col-span-5 bg-lightGray opacity-45 shadow-md p-6 rounded-md" data-aos="fade-right">
+            <h3 className="text-xl font-semibold text-black mb-4">
               We are here to help you
             </h3>
             {isSubmitting && (
@@ -115,8 +115,8 @@ export const Contact = () => {
               <div className="my-4 text-lg text-gray-700">{result}</div>
             )}
           </div>
-          <div className="md:col-span-7 bg-blue-100 shadow-md p-6 rounded-md" data-aos="fade-left">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+          <div className="md:col-span-7 bg-lightGray shadow-md p-6 rounded-md" data-aos="fade-left">
+            <h3 className="text-xl font-semibold text-black mb-4">
               Contact Information
             </h3>
             <div className="space-y-6">
@@ -125,10 +125,10 @@ export const Contact = () => {
                   <MdOutlineMailOutline className="w-6 h-6 text-yellow-500" />
                 </div>
                 <div>
-                  <span className="block text-gray-700 font-medium">Email</span>
+                  <span className="block text-yellow-500 font-medium">Email</span>
                   <a
                     href="mailto:vikashparjapati59@gmail.com"
-                    className="block text-yellow-500 text-sm font-bold"
+                    className="block text-gray-900 text-sm font-bold"
                   >
                     vikashparjapati59@gmail.com
                   </a>
@@ -139,10 +139,10 @@ export const Contact = () => {
                   <FaPhoneAlt className="w-6 h-6 text-yellow-500" />
                 </div>
                 <div>
-                  <span className="block text-gray-700 font-medium">
+                  <span className="block text-yellow-500 font-medium">
                     Customer Support
                   </span>
-                  <a href="tel:+919306075344" className="text-yellow-500 text-lg font-bold">
+                  <a href="tel:+919306075344" className="text-gray-900 text-lg font-bold">
                     9306075344
                   </a>
                 </div>
@@ -152,7 +152,7 @@ export const Contact = () => {
                   <FaLocationDot className="w-6 h-6 text-yellow-500" />
                 </div>
                 <div>
-                  <span className="block text-gray-700 font-medium">
+                  <span className="block text-yellow-500 font-medium">
                     Address
                   </span>
                   <p className="text-gray-900 text-base">

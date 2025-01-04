@@ -46,15 +46,15 @@ export const Experience = () => {
       {experiences.map((experience, index) => (
         <div
           key={index}
-          className="mb-10 bg-black shadow-2xl rounded-lg p-8 border-2 border-gray-300 transition-all transform hover:scale-105 hover:shadow-xl duration-500"
+          className="mb-10 bg-lightGray shadow-2xl rounded-lg p-8 border-2 border-gray-300 transition-all transform hover:scale-105 hover:shadow-xl duration-500"
           data-aos="fade-up"
         >
-          <h2 className="text-3xl font-semibold text-white hover:text-blue-600 cursor-pointer mb-3">
+          <h2 className="text-3xl font-semibold text-black hover:text-blue-600 cursor-pointer mb-3">
             {experience.role}
           </h2>
-          <p className="text-white font-medium text-xl">{experience.company}</p>
-          <p className="text-white text-sm mb-4">{experience.duration}</p>
-          <div className=" text-gray-400 space-y-2">
+          <p className="text-gray-900 font-medium text-xl">{experience.company}</p>
+          <p className="text-gray-900 text-sm mb-4">{experience.duration}</p>
+          <div className=" text-gray-300 space-y-2">
             {experience.responsibilities.map((responsibility, i) => (
               <p key={i}>{responsibility}</p>
             ))}
