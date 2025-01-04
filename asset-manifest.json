@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.aacf7613.css",
-    "main.js": "/Portfolio/static/js/main.adb51ce1.js",
+    "main.css": "/Portfolio/static/css/main.8446f5cf.css",
+    "main.js": "/Portfolio/static/js/main.14aff659.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/ecomimage.png": "/Portfolio/static/media/ecomimage.1e458cc6e5060b836dac.png",
     "static/media/Restaurent.png": "/Portfolio/static/media/Restaurent.119d17929fdaae71e864.png",
@@ -15,12 +15,12 @@
     "static/media/slick.ttf": "/Portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Portfolio/index.html",
-    "main.aacf7613.css.map": "/Portfolio/static/css/main.aacf7613.css.map",
-    "main.adb51ce1.js.map": "/Portfolio/static/js/main.adb51ce1.js.map",
+    "main.8446f5cf.css.map": "/Portfolio/static/css/main.8446f5cf.css.map",
+    "main.14aff659.js.map": "/Portfolio/static/js/main.14aff659.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aacf7613.css",
-    "static/js/main.adb51ce1.js"
+    "static/css/main.8446f5cf.css",
+    "static/js/main.14aff659.js"
   ]
 }
