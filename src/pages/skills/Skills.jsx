@@ -4,8 +4,9 @@ import htmlImage from "../../assets/html.png";
 import cssImage from "../../assets/css.png";
 import javascriptImage from "../../assets/javascript.png";
 import reactjsImage from "../../assets/ReactJS.png";
-import MongoDBImage from "../../assets/MongoDB.png";
 import bootstrapImage from "../../assets/bootstrap.jpg";
+import nextImage from "../../assets/next.png";
+import tailwindImage from "../../assets/tailwind.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -45,8 +46,8 @@ export const Skills = () => {
           <span>REACTJS</span>
         </div>
         <div className="skillcard" data-aos="flip-left" data-aos-delay="500">
-          <img src={MongoDBImage} alt="MongoDB Logo" className="skills_image" />
-          <span>MONGODB</span>
+          <img src={nextImage} alt="MongoDB Logo" className="skills_image" />
+          <span>NEXT.JS</span>
         </div>
         <div className="skillcard" data-aos="flip-left" data-aos-delay="600">
           <img
@@ -56,6 +57,15 @@ export const Skills = () => {
           />
           <span>Bootstrap</span>
         </div>
+        <div className="skillcard" data-aos="flip-left" data-aos-delay="600">
+          <img
+            src={tailwindImage}
+            alt="Bootstrap Logo"
+            className="skills_image"
+          />
+          <span>TAILWIND</span>
+        </div>
+
       </div>
     </section>
   );
