@@ -39,7 +39,7 @@ export const Project = () => {
         <div className="relative px-2 ">
         <ProjectCart
                 image={Restautent}
-                title="E-commerce Website"
+                title="Restaurent Application"
                 description=" Utilized Next.js, Node.js, MongoDB, Context API, CSS, Bootstrap, and Material-UI to proficiently develop and maintain a robust restaurant application. Implemented essential functionalities such as menu browsing, cart management, and user authentication (login/logout) to enhance user experience.
   The owner capabilities to add, update, and delete meals, and access a comprehensive list of all meals for management.
  Created a user-friendly interface enabling customers to contact the restaurant through email for inquiries and feedback.
